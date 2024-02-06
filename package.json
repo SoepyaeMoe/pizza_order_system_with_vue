@@ -8,8 +8,15 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@aacassandra/vue3-progressbar": "^1.0.3",
+    "axios": "^1.6.5",
+    "bootstrap": "^5.3.2",
     "core-js": "^3.8.3",
-    "vue": "^3.2.13"
+    "mdb-ui-kit": "^7.1.0",
+    "sweetalert2": "^11.10.4",
+    "vue": "^3.2.13",
+    "vue-loading-overlay": "6.0",
+    "vue-router": "^4.2.5"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

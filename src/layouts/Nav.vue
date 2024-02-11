@@ -35,10 +35,11 @@
                             aria-expanded="false">
                             {{ userInfo.name }}
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><span class="dropdown-item"> {{ userInfo.email }} </span></li>
-                            <li><span class="dropdown-item">Profile</span></li>
-                            <li><span class="dropdown-item" @click="logout">Logout</span></li>
+                        <ul class="dropdown-menu fw-bold">
+                            <li><span class="dropdown-item fw-bold"> {{ userInfo.email }} </span></li>
+                            <li><router-link to="/profile"><span class="dropdown-item fw-bold">Profile</span></router-link>
+                            </li>
+                            <li><span class="dropdown-item fw-bold" @click="logout">Logout</span></li>
                         </ul>
                     </li>
                 </ul>

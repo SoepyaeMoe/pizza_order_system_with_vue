@@ -7,6 +7,10 @@ import CartComponent from '../components/CartComponent.vue';
 import HistoryComponent from '../components/HistoryComponent.vue';
 import NotFound from '../components/NotFound.vue';
 import ContactComponent from '../components/ContactComponent.vue';
+import ProfileComponent from '../components/ProfileComponent.vue';
+import ProfileUpdate from '../components/ProfileUpdate.vue';
+import ChangePassword from '../components/ChangePassword.vue';
+
 
 const isAuthenticated = () => {
     if (localStorage.getItem('token')) {
@@ -25,6 +29,9 @@ const routes = [
     { path: '/products/:id', component: ProductDetailComponent, beforeEnter: isAuthenticated },
     { path: '/cart', component: CartComponent, beforeEnter: isAuthenticated },
     { path: '/history', component: HistoryComponent, beforeEnter: isAuthenticated },
+    { path: '/profile', component: ProfileComponent, beforeEnter: isAuthenticated },
+    { path: '/profile_update', component: ProfileUpdate, beforeEnter: isAuthenticated },
+    { path: '/change_password', component: ChangePassword, beforeEnter: isAuthenticated },
     { path: '/:pathMatch(.*)*', component: NotFound, beforeEnter: isAuthenticated }
 ];
 

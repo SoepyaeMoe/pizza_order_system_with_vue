@@ -100,7 +100,6 @@ export default {
                 password_confirmation: this.password_confirmation
             })
                 .then(response => {
-                    console.log(response);
                     if (response.data.status == 1) {
                         localStorage.setItem('token', response.data.data.token);
                         this.$axios.defaults.headers.common['Authorization'] = `Bearer ${response.data.data.token}`;

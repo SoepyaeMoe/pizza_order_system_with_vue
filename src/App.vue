@@ -11,6 +11,7 @@ export default {
     return {
       url: 'http://localhost:8000/api',
       imgsrc: 'http://localhost:8000/storage/product_img/',
+      profileImgSrc: 'http://localhost:8000/storage/profile_pic/'
     }
   }
 }
